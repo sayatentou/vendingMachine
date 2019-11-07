@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(240, 234, 234);
+}
+
+.vendingMachine {
+    background-color: rgb(236, 63, 63);
+    width: 500px;
+    height: 610px;
+    margin: auto;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.items {
+    width: 95%;
+    height: 78%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    background-color: white;
+    width: 145px;
+    margin: 5px;
+    border-radius: 10px;
+    padding-top: 10px;
+    text-align: center;
+    max-height: 215px;
+    min-height: 215px;
+}
+
+img {
+    width: 140px;
+    height: 50%;
+}
+
+.wide {
+    width: 55px;
+}
+
+.name,.price {
+    margin: 0;
+}
+
+.purchase { 
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 60%;
+    background-color: white;
+    border: 1px solid rgb(130, 245, 130);
+    cursor: pointer;
+}
+
+.purchasable {
+    background-color: rgb(130, 245, 130);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input, .change {
+    border: 1px solid black;
+    height: 110px;
+    border-radius: 10px;
+    color: white;
+    width: 220px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.insert-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border-radius: 10px;
+    font-size: 15px;
+    height: 30px;
+    padding-left: 2%;
+    margin-right: 5px;
+}
+
+input[disabled] {
+    color: white;
+    background-color: rgb(236, 63, 63);
+    border: 1px solid rgb(236, 63, 63);
+}
+
+.input > p {
+    margin-bottom: 0;
+}
+
+.change-display {
+    display: flex;
+    justify-content: left;
+}
+
+.emit {
+    border-radius: 5px;
+    background-color: rgb(59, 135, 248);
+    border: 1px solid rgba(59, 135, 248, 0.37);
+    cursor: pointer;
+    color: white;
+}
+
+.animated {
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
+}
+
+
+
