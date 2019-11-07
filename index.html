@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>自動販売機</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="vendingMachine">
+            <div class="items">
+                <div class="item">
+                    <img src="img/AYATAKA.jpg">
+                    <p class="name">綾鷹</p>
+                    <p class="price">160円</p>
+                    <button class="purchase" onclick="pushButton(160)" price=160 disabled>購入</button>
+                </div>
+                <div class="item">
+                    <img src="img/BOSSCOFFEE.jfif" class="wide">
+                    <p class="name">贅沢微糖</p>
+                    <p class="price">120円</p>
+                    <button class="purchase" onclick="pushButton(120)" price=120 disabled>購入</button>
+                </div>
+                <div class="item">
+                    <img src="img/coke.jpg" class="wide">
+                    <p class="name">コーラ</p>
+                    <p class="price">120円</p>
+                    <button class="purchase" onclick="pushButton(120)" price=120 disabled>購入</button>
+                </div>
+                <div class="item">
+                    <img src="img/MILKTEA.jfif">
+                    <p class="name">午後の紅茶</p>
+                    <p class="price">160円</p>
+                    <button class="purchase" onclick="pushButton(160)" price=160 disabled>購入</button>
+                </div>
+                <div class="item">
+                    <img src="img/MITSUYACIDER.jfif">
+                    <p class="name">三ツ矢サイダー</p>
+                    <p class="price">160円</p>
+                    <button class="purchase" onclick="pushButton(160)" price=160 disabled>購入</button>
+                </div>
+                <div class="item">
+                    <img src="img/OIOCHA.jfif">
+                    <p class="name">濃い茶</p>
+                    <p class="price">160円</p>
+                    <button class="purchase" onclick="pushButton(160)" price=160 disabled>購入</button>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="input">
+                    <p>投入金額</p>
+                    <div class="insert-area">
+                        <input id="input" type="number" placeholder="例: 1000">
+                        <p>円</p>
+                    </div>
+                </div>
+                <div class="change">
+                    <div class="change-display">
+                        <p>お釣り:&nbsp;</p>
+                        <p id="change"></p>
+                    </div>  
+                    <button class="emit" id="emit" onclick="reset()">お釣りを出す</button>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
